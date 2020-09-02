@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script async defer src="script.js"></script>
+</head>
+<body>
+    <div id="main" class="container shadow-lg p-3 mb-5 bg-white rounded">
+        <h1>Word Frequency Visualizer</h1>
+        <div class="container" id="first">
+            <!-- <label for="inputText">Paste Text Here</label> -->
+            <textarea class="text-justify  form-control rounded text-white-50 bg-dark" aria-label="With textarea" id="inputText" placeholder="Input Text Here!" cols="100" rows="10"></textarea> 
+        
+            <button class="btn btn-dark btn-sm btn-block" id="btnCalc"><strong>Calculate</strong></button>
+        </div>
+        <br>
+
+        <div id="graph" class="container chart-container" >
+            <canvas id="myChart"></canvas>
+        </div>
+        
+    </div>
+
+</body>
+</html>

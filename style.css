@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: rgb(255, 205, 1);
+    border: 1px solid black;
+    padding-bottom:10px ;
+    margin:0 15px;
+    background-color: #9a1750;
+}
+
+
+canvas {
+    border: 1px dotter blue;
+    
+  }
+
+#first{
+    padding: 15px;
+    
+}
+
+#myChart{
+    
+    background-color:#f8dae1;
+}
+
+#graph{
+    padding: 15px;
+}
