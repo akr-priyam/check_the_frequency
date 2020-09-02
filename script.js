@@ -3,7 +3,7 @@ $('#btnCalc').click(()=>{
     let words=getWords(text);
     let wc=getWordsCount(words);
     let wcArr=sortWordCounts(wc);
-    printWordTable(wcArr);
+//     printWordTable(wcArr);
     generateChart(wcArr);
 });
 
@@ -53,18 +53,18 @@ function sortWordCounts(wordsCount){
     return wcArr.sort((a,b)=>b.count - a.count).slice(0,50);
 }
 
-function printWordTable(wordCountArray){
-    let table=$('#tblWordCount');
-    table.empty();
-    wordCountArray.forEach((wc)=>{
-        table.append(
-            $('<tr>')
-                .append($('<td>').text(wc.word))
-                .append($('<td>').text(wc.count))
+// function printWordTable(wordCountArray){
+//     let table=$('#tblWordCount');
+//     table.empty();
+//     wordCountArray.forEach((wc)=>{
+//         table.append(
+//             $('<tr>')
+//                 .append($('<td>').text(wc.word))
+//                 .append($('<td>').text(wc.count))
             
-            );
-    })
-}
+//             );
+//     })
+// }
 
 function generateChart(wcArr){
     let ctx = document.getElementById('myChart').getContext('2d');
